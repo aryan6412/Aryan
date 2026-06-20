@@ -312,12 +312,13 @@ function AdminSection() {
                             <nav className="nav flex-column gap-2">
                                 <button 
                                     onClick={() => setActiveTab('hero')}
-                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'hero' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    className="nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100"
                                     style={{ 
                                         borderRadius: '12px', 
                                         transition: 'all 0.2s', 
-                                        backgroundColor: activeTab === 'hero' ? 'var(--primary-teal)' : 'transparent',
-                                        color: activeTab === 'hero' ? '#fff' : 'var(--text-color)',
+                                        backgroundColor: activeTab === 'hero' ? 'rgba(15, 78, 70, 0.08)' : 'transparent',
+                                        color: activeTab === 'hero' ? 'var(--primary-teal)' : 'var(--text-color)',
+                                        opacity: activeTab === 'hero' ? 1 : 0.7,
                                         fontWeight: activeTab === 'hero' ? 600 : 500
                                     }}
                                 >
@@ -325,12 +326,13 @@ function AdminSection() {
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('services')}
-                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'services' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    className="nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100"
                                     style={{ 
                                         borderRadius: '12px', 
                                         transition: 'all 0.2s', 
-                                        backgroundColor: activeTab === 'services' ? 'var(--primary-teal)' : 'transparent',
-                                        color: activeTab === 'services' ? '#fff' : 'var(--text-color)',
+                                        backgroundColor: activeTab === 'services' ? 'rgba(15, 78, 70, 0.08)' : 'transparent',
+                                        color: activeTab === 'services' ? 'var(--primary-teal)' : 'var(--text-color)',
+                                        opacity: activeTab === 'services' ? 1 : 0.7,
                                         fontWeight: activeTab === 'services' ? 600 : 500
                                     }}
                                 >
@@ -338,12 +340,13 @@ function AdminSection() {
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('experience')}
-                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'experience' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    className="nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100"
                                     style={{ 
                                         borderRadius: '12px', 
                                         transition: 'all 0.2s', 
-                                        backgroundColor: activeTab === 'experience' ? 'var(--primary-teal)' : 'transparent',
-                                        color: activeTab === 'experience' ? '#fff' : 'var(--text-color)',
+                                        backgroundColor: activeTab === 'experience' ? 'rgba(15, 78, 70, 0.08)' : 'transparent',
+                                        color: activeTab === 'experience' ? 'var(--primary-teal)' : 'var(--text-color)',
+                                        opacity: activeTab === 'experience' ? 1 : 0.7,
                                         fontWeight: activeTab === 'experience' ? 600 : 500
                                     }}
                                 >
@@ -351,12 +354,13 @@ function AdminSection() {
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('works')}
-                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'works' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    className="nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100"
                                     style={{ 
                                         borderRadius: '12px', 
                                         transition: 'all 0.2s', 
-                                        backgroundColor: activeTab === 'works' ? 'var(--primary-teal)' : 'transparent',
-                                        color: activeTab === 'works' ? '#fff' : 'var(--text-color)',
+                                        backgroundColor: activeTab === 'works' ? 'rgba(15, 78, 70, 0.08)' : 'transparent',
+                                        color: activeTab === 'works' ? 'var(--primary-teal)' : 'var(--text-color)',
+                                        opacity: activeTab === 'works' ? 1 : 0.7,
                                         fontWeight: activeTab === 'works' ? 600 : 500
                                     }}
                                 >
@@ -364,12 +368,13 @@ function AdminSection() {
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('testimonials')}
-                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'testimonials' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    className="nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100"
                                     style={{ 
                                         borderRadius: '12px', 
                                         transition: 'all 0.2s', 
-                                        backgroundColor: activeTab === 'testimonials' ? 'var(--primary-teal)' : 'transparent',
-                                        color: activeTab === 'testimonials' ? '#fff' : 'var(--text-color)',
+                                        backgroundColor: activeTab === 'testimonials' ? 'rgba(15, 78, 70, 0.08)' : 'transparent',
+                                        color: activeTab === 'testimonials' ? 'var(--primary-teal)' : 'var(--text-color)',
+                                        opacity: activeTab === 'testimonials' ? 1 : 0.7,
                                         fontWeight: activeTab === 'testimonials' ? 600 : 500
                                     }}
                                 >
