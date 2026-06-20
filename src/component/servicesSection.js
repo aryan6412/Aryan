@@ -1,5 +1,5 @@
 import React from 'react';
-import { services_data } from '../Data/portfolioData';
+import { services_data, hero_data } from '../Data/portfolioData';
 
 function ServicesSection() {
   return (
@@ -48,11 +48,11 @@ function ServicesSection() {
             {/* Statistics Counters */}
             <div className="row g-4 mt-2">
               <div className="col-sm-6">
-                <div className="stats-number text-coral">285+</div>
+                <div className="stats-number text-coral">{hero_data.projectsCompleted || '285+'}</div>
                 <div className="stats-label">Projects Completed</div>
               </div>
               <div className="col-sm-6">
-                <div className="stats-number text-teal">190+</div>
+                <div className="stats-number text-teal">{hero_data.happyClients || '190+'}</div>
                 <div className="stats-label">Happy Clients</div>
               </div>
             </div>

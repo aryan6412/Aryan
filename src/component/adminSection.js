@@ -456,6 +456,29 @@ function AdminSection() {
                                         </div>
                                     </div>
 
+                                    <div className="row g-3 mb-4">
+                                        <div className="col-md-6">
+                                            <label className="form-label text-white-50 small">Projects Completed Counter (e.g. 285+)</label>
+                                            <input 
+                                                type="text" 
+                                                className="form-control bg-dark border-secondary text-white py-2" 
+                                                style={{ borderRadius: '8px' }}
+                                                value={portfolioData.hero_data.projectsCompleted || ''}
+                                                onChange={(e) => handleHeroChange('projectsCompleted', e.target.value)}
+                                            />
+                                        </div>
+                                        <div className="col-md-6">
+                                            <label className="form-label text-white-50 small">Happy Clients Counter (e.g. 190+)</label>
+                                            <input 
+                                                type="text" 
+                                                className="form-control bg-dark border-secondary text-white py-2" 
+                                                style={{ borderRadius: '8px' }}
+                                                value={portfolioData.hero_data.happyClients || ''}
+                                                onChange={(e) => handleHeroChange('happyClients', e.target.value)}
+                                            />
+                                        </div>
+                                    </div>
+
                                     <div className="mb-4">
                                         <label className="form-label text-white-50 small">Hero Title (Greeting Headline)</label>
                                         <input 

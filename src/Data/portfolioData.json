@@ -8,7 +8,9 @@
         "description": "Final Year Computer Engineering Student | Full-Stack Developer | AI/ML Enthusiast",
         "experienceYears": 3,
         "experienceUnit": "Months",
-        "imageUrl": "images/hero_portrait.png"
+        "imageUrl": "images/hero_portrait.png",
+        "projectsCompleted": "285+",
+        "happyClients": "190+"
     },
     "services_data": [
         {
