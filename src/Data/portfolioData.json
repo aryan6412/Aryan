@@ -1,0 +1,61 @@
+{
+    "hero_data": {
+        "name": "Aryan",
+        "email": "ap8307655@gmail.com",
+        "phone": "+91 7984419724",
+        "title": "Hey There, I'm Aryan",
+        "subtitle": "I design beautifully simple things, And I love what I do.",
+        "description": "Final Year Computer Engineering Student | Full-Stack Developer | AI/ML Enthusiast",
+        "experienceYears": 3,
+        "experienceUnit": "Months"
+    },
+    "services_data": [
+        {
+            "title": "Website Design",
+            "projectsCount": 2,
+            "iconName": "Monitor",
+            "color": "teal"
+        },
+        {
+            "title": "Manual Testing",
+            "projectsCount": 3,
+            "iconName": "BadgeCheck",
+            "color": "teal"
+        }
+    ],
+    "experience_data": [
+        {
+            "company": "Velox IT Solutions",
+            "dates": "March 2026- Present",
+            "role": "PHP Developer",
+            "description": "Building custom web applications for various clients using React and PHP"
+        }
+    ],
+    "works_data": [
+        {
+            "title": "The Meera Hotel & Resort - Room booking Website",
+            "category": "Web Design",
+            "colorTheme": "yellow",
+            "imageUrl": "images/project_brand_id.png"
+        },
+        {
+            "title": "Company Website",
+            "category": "Web Design",
+            "colorTheme": "teal",
+            "imageUrl": "images/project_agency_web.png"
+        },
+        {
+            "title": "Shakti Bhuvan - Room booking Website",
+            "category": "Manual Testing",
+            "colorTheme": "mint",
+            "imageUrl": "images/project_food_app.png"
+        }
+    ],
+    "testimonials_data": [],
+    "contactLinks": {
+        "github": "https://github.com/aryan6412",
+        "linkedin": "https://www.linkedin.com/in/aryan-patel-516b492b5/",
+        "resume": "https://drive.usercontent.google.com/download?id=1Tpq9KfevC1CeNnITS1MT0mVbyuycbZ-m&export=download&authuser=0&confirm=t&uuid=813202ea-1b9c-46a6-a486-fadd6ca05813&at=AAINaIIGHNBmHQLdU-ZzvDl4Y2ds:1781930391190",
+        "address": "34, Asaitnagar society, Mehsana road, Visnagar 384315"
+    }
+}
