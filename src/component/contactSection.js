@@ -27,18 +27,6 @@ function ContactSection() {
                 Start by saying hi
               </a>
             </div>
-            
-            <div className="mt-5">
-              <a 
-                href="#/admin" 
-                className="text-decoration-none small text-muted hover-coral" 
-                style={{ fontSize: '0.8rem', opacity: 0.6, transition: 'opacity 0.2s' }}
-                onMouseOver={(e) => e.target.style.opacity = 1}
-                onMouseOut={(e) => e.target.style.opacity = 0.6}
-              >
-                Admin Panel Login
-              </a>
-            </div>
           </div>
 
           {/* Info & Links Column (Right Side) */}
