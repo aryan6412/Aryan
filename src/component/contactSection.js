@@ -86,7 +86,7 @@ function ContactSection() {
             &copy; {new Date().getFullYear()} {hero_data.name}. All rights reserved.
           </p>
           <p className="text-muted small mb-0">
-            Powered by React &amp; Tailwind Aesthetic
+            Designed &amp; Developed by {hero_data.name}
           </p>
         </div>
 
