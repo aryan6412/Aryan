@@ -1,9 +1,10 @@
 import React from 'react';
-import { Phone, Award } from 'lucide-react';
-import { hero_data } from '../Data/portfolioData';
+import { Phone, Award, FileText } from 'lucide-react';
+import { hero_data, contactLinks } from '../Data/portfolioData';
 
 function First() {
   const { name, email, phone, title, subtitle, experienceYears, experienceUnit, imageUrl } = hero_data;
+  const { resume } = contactLinks || {};
 
   // Resolve image source dynamically supporting external URLs and relative path assets
   const getHeroImageSrc = () => {
@@ -50,6 +51,18 @@ function First() {
           </div>
 
           <div className="d-none d-lg-flex align-items-center gap-2">
+            {resume && (
+              <a 
+                href={resume} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-outline-dark d-inline-flex align-items-center gap-2 px-4 py-2 border-secondary"
+                style={{ borderRadius: '30px', fontWeight: 600, fontSize: '0.9rem' }}
+              >
+                <FileText size={14} className="text-teal" />
+                Resume
+              </a>
+            )}
             <a 
               href={`tel:${phone}`} 
               className="btn btn-outline-dark d-inline-flex align-items-center gap-2 px-4 py-2 border-secondary"
@@ -74,10 +87,22 @@ function First() {
               <p className="lead fs-4 text-muted mb-4 font-display" style={{ fontStyle: 'italic', fontWeight: 400 }}>
                 {subtitle}
               </p>
-              <div className="mb-4">
-                <a href={`mailto:${email}`} className="hero-email-link">
+              <div className="d-flex align-items-center gap-4 mb-5 flex-wrap">
+                <a href={`mailto:${email}`} className="hero-email-link m-0">
                   {email}
                 </a>
+                {resume && (
+                  <a 
+                    href={resume} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn btn-dark d-inline-flex align-items-center gap-2 px-4 py-2"
+                    style={{ borderRadius: '30px', fontWeight: 600, fontSize: '0.9rem', backgroundColor: 'var(--primary-teal)', border: 'none' }}
+                  >
+                    <FileText size={14} />
+                    Download CV
+                  </a>
+                )}
               </div>
 
               {/* Experience Badge */}
