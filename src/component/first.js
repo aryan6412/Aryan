@@ -3,7 +3,17 @@ import { Phone, Award } from 'lucide-react';
 import { hero_data } from '../Data/portfolioData';
 
 function First() {
-  const { name, email, phone, title, subtitle, experienceYears, experienceUnit } = hero_data;
+  const { name, email, phone, title, subtitle, experienceYears, experienceUnit, imageUrl } = hero_data;
+
+  // Resolve image source dynamically supporting external URLs and relative path assets
+  const getHeroImageSrc = () => {
+    if (!imageUrl) return `${process.env.PUBLIC_URL}/images/hero_portrait.png`;
+    if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://') || imageUrl.startsWith('data:')) {
+      return imageUrl;
+    }
+    const cleanPath = imageUrl.startsWith('/') ? imageUrl : `/${imageUrl}`;
+    return `${process.env.PUBLIC_URL}${cleanPath}`;
+  };
 
   return (
     <>
@@ -87,7 +97,7 @@ function First() {
                 
                 {/* Portrait picture */}
                 <img 
-                  src={`${process.env.PUBLIC_URL}/images/hero_portrait.png`} 
+                  src={getHeroImageSrc()} 
                   alt={name} 
                   className="portrait-img shadow-lg"
                 />

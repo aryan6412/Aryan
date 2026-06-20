@@ -7,7 +7,8 @@
         "subtitle": "I design beautifully simple things, And I love what I do.",
         "description": "Final Year Computer Engineering Student | Full-Stack Developer | AI/ML Enthusiast",
         "experienceYears": 3,
-        "experienceUnit": "Months"
+        "experienceUnit": "Months",
+        "imageUrl": "images/hero_portrait.png"
     },
     "services_data": [
         {
@@ -25,7 +26,7 @@
     ],
     "experience_data": [
         {
-            "company": "Velox IT Solutions",
+            "company": "Velox Group Visnagar",
             "dates": "March 2026- Present",
             "role": "PHP Developer",
             "description": "Building custom web applications for various clients using React and PHP"
@@ -56,6 +57,7 @@
         "github": "https://github.com/aryan6412",
         "linkedin": "https://www.linkedin.com/in/aryan-patel-516b492b5/",
         "resume": "https://drive.usercontent.google.com/download?id=1Tpq9KfevC1CeNnITS1MT0mVbyuycbZ-m&export=download&authuser=0&confirm=t&uuid=813202ea-1b9c-46a6-a486-fadd6ca05813&at=AAINaIIGHNBmHQLdU-ZzvDl4Y2ds:1781930391190",
-        "address": "34, Asaitnagar society, Mehsana road, Visnagar 384315"
+        "address": "34, Asaitnagar society, Mehsana road, Visnagar 384315",
+        "whatsapp": "https://wa.me/917984419724?text=Hi"
     }
 }

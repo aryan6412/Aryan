@@ -489,6 +489,18 @@ function AdminSection() {
                                         />
                                     </div>
 
+                                    <div className="mb-4">
+                                        <label className="form-label text-white-50 small">Hero Image URL or Relative Path (e.g. images/hero_portrait.png or https://...)</label>
+                                        <input 
+                                            type="text" 
+                                            className="form-control bg-dark border-secondary text-white py-3 px-4" 
+                                            style={{ borderRadius: '10px' }}
+                                            value={portfolioData.hero_data.imageUrl || ''}
+                                            onChange={(e) => handleHeroChange('imageUrl', e.target.value)}
+                                            placeholder="images/hero_portrait.png"
+                                        />
+                                    </div>
+
                                     <h4 className="h5 text-white fw-bold mb-3 mt-5 border-top border-secondary border-opacity-10 pt-4">Social Network Links</h4>
                                     <div className="row g-3">
                                         <div className="col-md-6">
