@@ -530,3 +530,56 @@ h1, h2, h3, h4, .font-display {
   background: rgba(255, 255, 255, 0.05);
   color: var(--primary-coral) !important;
 }
+
+/* Scoped Light Dashboard Theme overrides */
+.admin-dashboard-wrapper {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+}
+
+.admin-dashboard-wrapper .card {
+  background-color: #fff !important;
+  border: 1px solid rgba(15, 78, 70, 0.06) !important;
+  box-shadow: 0 10px 30px rgba(15, 78, 70, 0.02) !important;
+  color: var(--text-color) !important;
+}
+
+.admin-dashboard-wrapper .form-control,
+.admin-dashboard-wrapper .form-select {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid rgba(15, 78, 70, 0.1) !important;
+}
+
+.admin-dashboard-wrapper .form-control::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.7;
+}
+
+.admin-dashboard-wrapper .form-control:focus,
+.admin-dashboard-wrapper .form-select:focus {
+  border-color: var(--primary-teal) !important;
+  box-shadow: 0 0 0 0.25rem rgba(15, 78, 70, 0.1) !important;
+}
+
+.admin-dashboard-wrapper .bg-dark {
+  background-color: var(--bg-color) !important;
+}
+
+.admin-dashboard-wrapper .border-secondary {
+  border-color: rgba(15, 78, 70, 0.1) !important;
+}
+
+.admin-dashboard-wrapper .border-opacity-40 {
+  border-color: rgba(15, 78, 70, 0.06) !important;
+}
+
+.admin-dashboard-wrapper .text-white {
+  color: var(--text-color) !important;
+}
+
+.admin-dashboard-wrapper .text-white-50 {
+  color: var(--text-muted) !important;
+}
+

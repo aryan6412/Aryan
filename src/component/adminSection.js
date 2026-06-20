@@ -230,20 +230,20 @@ function AdminSection() {
     // Passcode lock view
     if (!isAuthenticated) {
         return (
-            <div className="d-flex align-items-center justify-content-center min-vh-100 py-5" style={{ background: 'rgba(10, 10, 15, 0.9)' }}>
-                <div className="card p-5 border-0 shadow-lg text-center" style={{ maxWidth: '420px', width: '100%', background: 'rgba(25, 25, 35, 0.75)', backdropFilter: 'blur(16px)', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                    <div className="mb-4 d-inline-flex p-3 bg-info bg-opacity-10 text-info rounded-circle mx-auto">
-                        <Lucide.Lock size={32} />
+            <div className="admin-dashboard-wrapper min-vh-100 d-flex align-items-center justify-content-center py-5">
+                <div className="card p-5 border-0 shadow text-center" style={{ maxWidth: '420px', width: '100%', borderRadius: '24px' }}>
+                    <div className="mb-4 d-inline-flex p-3 bg-secondary bg-opacity-10 text-teal rounded-circle mx-auto">
+                        <Lucide.Lock size={32} className="text-teal" />
                     </div>
-                    <h2 className="text-white fw-bold mb-2">Admin Portal</h2>
+                    <h2 className="text-teal fw-bold mb-2 font-display">Admin Portal</h2>
                     <p className="text-muted small mb-4">Enter your passcode to manage your portfolio site content.</p>
                     
                     <form onSubmit={handleLogin}>
                         <div className="mb-3">
                             <input 
                                 type="password" 
-                                className="form-control text-center py-3 border-secondary text-white placeholder-secondary" 
-                                style={{ background: 'rgba(0,0,0,0.2)', borderRadius: '12px' }}
+                                className="form-control text-center py-3 text-dark placeholder-secondary" 
+                                style={{ borderRadius: '12px' }}
                                 placeholder="Enter passcode"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
@@ -251,12 +251,12 @@ function AdminSection() {
                             />
                         </div>
                         {authError && <p className="text-danger small mb-3">{authError}</p>}
-                        <button type="submit" className="btn btn-info w-100 py-3 fw-semibold text-dark shadow-sm" style={{ borderRadius: '12px' }}>
+                        <button type="submit" className="btn w-100 py-3 fw-semibold text-white shadow-sm" style={{ borderRadius: '12px', backgroundColor: 'var(--primary-teal)' }}>
                             Unlock Dashboard
                         </button>
                     </form>
-                    <div className="mt-4 pt-3 border-top border-secondary border-opacity-20">
-                        <a href="#/" className="text-info text-decoration-none small d-inline-flex align-items-center gap-1">
+                    <div className="mt-4 pt-3 border-top border-secondary border-opacity-10">
+                        <a href="#/" className="text-coral text-decoration-none small d-inline-flex align-items-center gap-1 fw-bold">
                             <Lucide.ArrowLeft size={14} /> Back to Portfolio
                         </a>
                     </div>
@@ -266,21 +266,21 @@ function AdminSection() {
     }
 
     return (
-        <div className="min-vh-100 text-light py-5" style={{ background: 'rgba(8, 8, 12, 0.98)', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+        <div className="admin-dashboard-wrapper min-vh-100 py-5 text-start">
             <div className="container-xl">
                 
                 {/* Header Row */}
-                <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4 mb-5 pb-4 border-bottom border-secondary border-opacity-20">
+                <header className="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4 mb-5 pb-4 border-bottom border-secondary border-opacity-10">
                     <div className="text-start">
-                        <span className="pill-badge text-uppercase small fw-bold mb-2 d-inline-block" style={{ backgroundColor: 'var(--primary-coral)', color: 'white', padding: '4px 12px', borderRadius: '30px' }}>Control Center</span>
-                        <h1 className="display-6 text-white fw-bold mb-0">Redesigned Portfolio Dashboard</h1>
+                        <span className="pill-badge text-uppercase small fw-bold mb-2 d-inline-block" style={{ backgroundColor: 'var(--primary-coral)', color: 'white', padding: '4px 12px', borderRadius: '30px', fontSize: '0.75rem' }}>Control Center</span>
+                        <h1 className="display-6 text-teal fw-bold mb-0 font-display">Portfolio Dashboard</h1>
                     </div>
                     <div className="d-flex flex-wrap gap-2">
-                        <a href="#/" className="btn btn-outline-light d-inline-flex align-items-center gap-2 px-4 py-2" style={{ borderRadius: '10px' }}>
-                            <Lucide.Globe size={18} /> View Site
+                        <a href="#/" className="btn btn-outline-dark d-inline-flex align-items-center gap-2 px-4 py-2 border-secondary" style={{ borderRadius: '30px', fontWeight: 600 }}>
+                            <Lucide.Globe size={16} /> View Site
                         </a>
-                        <button onClick={handleLogout} className="btn btn-outline-danger d-inline-flex align-items-center gap-2 px-4 py-2" style={{ borderRadius: '10px' }}>
-                            <Lucide.LogOut size={18} /> Exit
+                        <button onClick={handleLogout} className="btn btn-outline-danger d-inline-flex align-items-center gap-2 px-4 py-2" style={{ borderRadius: '30px', fontWeight: 600 }}>
+                            <Lucide.LogOut size={16} /> Exit
                         </button>
                     </div>
                 </header>
@@ -289,7 +289,7 @@ function AdminSection() {
                 {saveStatus.message && (
                     <div className={`alert alert-${saveStatus.type === 'danger' ? 'danger' : saveStatus.type === 'success' ? 'success' : 'info'} p-4 mb-4 border-0 d-flex gap-3 align-items-start shadow-sm`} style={{ borderRadius: '16px' }}>
                         <div className="pt-1">
-                            {saveStatus.type === 'danger' ? <Lucide.AlertCircle size={22} /> : <Lucide.CheckCircle size={22} />}
+                            {saveStatus.type === 'danger' ? <Lucide.AlertCircle size={22} className="text-danger" /> : <Lucide.CheckCircle size={22} className="text-success" />}
                         </div>
                         <div className="flex-grow-1 text-start">
                             <p className="mb-0 fw-semibold text-dark">{saveStatus.message}</p>
@@ -307,49 +307,79 @@ function AdminSection() {
                     
                     {/* Navigation Sidebar */}
                     <div className="col-lg-3">
-                        <div className="card p-3 border-0 h-100" style={{ background: 'rgba(20, 20, 30, 0.75)', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.03)' }}>
-                            <p className="text-uppercase text-muted fw-bold small px-3 mb-3 text-start">Sections</p>
+                        <div className="card p-3 border-0 h-100 shadow-sm" style={{ borderRadius: '20px' }}>
+                            <p className="text-uppercase text-muted fw-bold small px-3 mb-3 text-start" style={{ letterSpacing: '1px' }}>Sections</p>
                             <nav className="nav flex-column gap-2">
                                 <button 
                                     onClick={() => setActiveTab('hero')}
-                                    className={`nav-link text-start py-3 px-4 border-0 text-light d-flex align-items-center gap-3 w-100 ${activeTab === 'hero' ? 'btn-info text-dark fw-bold shadow-sm' : 'bg-transparent text-opacity-70 hover-nav-item'}`}
-                                    style={{ borderRadius: '12px', transition: 'all 0.2s' }}
+                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'hero' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    style={{ 
+                                        borderRadius: '12px', 
+                                        transition: 'all 0.2s', 
+                                        backgroundColor: activeTab === 'hero' ? 'var(--primary-teal)' : 'transparent',
+                                        color: activeTab === 'hero' ? '#fff' : 'var(--text-color)',
+                                        fontWeight: activeTab === 'hero' ? 600 : 500
+                                    }}
                                 >
-                                    <Lucide.FileText size={18} /> Hero & Header
+                                    <Lucide.FileText size={16} /> Hero & Header
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('services')}
-                                    className={`nav-link text-start py-3 px-4 border-0 text-light d-flex align-items-center gap-3 w-100 ${activeTab === 'services' ? 'btn-info text-dark fw-bold shadow-sm' : 'bg-transparent text-opacity-70 hover-nav-item'}`}
-                                    style={{ borderRadius: '12px', transition: 'all 0.2s' }}
+                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'services' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    style={{ 
+                                        borderRadius: '12px', 
+                                        transition: 'all 0.2s', 
+                                        backgroundColor: activeTab === 'services' ? 'var(--primary-teal)' : 'transparent',
+                                        color: activeTab === 'services' ? '#fff' : 'var(--text-color)',
+                                        fontWeight: activeTab === 'services' ? 600 : 500
+                                    }}
                                 >
-                                    <Lucide.Cpu size={18} /> Services List
+                                    <Lucide.Cpu size={16} /> Services List
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('experience')}
-                                    className={`nav-link text-start py-3 px-4 border-0 text-light d-flex align-items-center gap-3 w-100 ${activeTab === 'experience' ? 'btn-info text-dark fw-bold shadow-sm' : 'bg-transparent text-opacity-70 hover-nav-item'}`}
-                                    style={{ borderRadius: '12px', transition: 'all 0.2s' }}
+                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'experience' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    style={{ 
+                                        borderRadius: '12px', 
+                                        transition: 'all 0.2s', 
+                                        backgroundColor: activeTab === 'experience' ? 'var(--primary-teal)' : 'transparent',
+                                        color: activeTab === 'experience' ? '#fff' : 'var(--text-color)',
+                                        fontWeight: activeTab === 'experience' ? 600 : 500
+                                    }}
                                 >
-                                    <Lucide.Layers size={18} /> Career Timeline
+                                    <Lucide.Layers size={16} /> Career Timeline
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('works')}
-                                    className={`nav-link text-start py-3 px-4 border-0 text-light d-flex align-items-center gap-3 w-100 ${activeTab === 'works' ? 'btn-info text-dark fw-bold shadow-sm' : 'bg-transparent text-opacity-70 hover-nav-item'}`}
-                                    style={{ borderRadius: '12px', transition: 'all 0.2s' }}
+                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'works' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    style={{ 
+                                        borderRadius: '12px', 
+                                        transition: 'all 0.2s', 
+                                        backgroundColor: activeTab === 'works' ? 'var(--primary-teal)' : 'transparent',
+                                        color: activeTab === 'works' ? '#fff' : 'var(--text-color)',
+                                        fontWeight: activeTab === 'works' ? 600 : 500
+                                    }}
                                 >
-                                    <Lucide.Layers size={18} /> Works / Portfolio
+                                    <Lucide.Layers size={16} /> Works / Portfolio
                                 </button>
                                 <button 
                                     onClick={() => setActiveTab('testimonials')}
-                                    className={`nav-link text-start py-3 px-4 border-0 text-light d-flex align-items-center gap-3 w-100 ${activeTab === 'testimonials' ? 'btn-info text-dark fw-bold shadow-sm' : 'bg-transparent text-opacity-70 hover-nav-item'}`}
-                                    style={{ borderRadius: '12px', transition: 'all 0.2s' }}
+                                    className={`nav-link text-start py-3 px-4 border-0 d-flex align-items-center gap-3 w-100 ${activeTab === 'testimonials' ? 'text-white fw-bold shadow-sm' : 'text-dark bg-transparent'}`}
+                                    style={{ 
+                                        borderRadius: '12px', 
+                                        transition: 'all 0.2s', 
+                                        backgroundColor: activeTab === 'testimonials' ? 'var(--primary-teal)' : 'transparent',
+                                        color: activeTab === 'testimonials' ? '#fff' : 'var(--text-color)',
+                                        fontWeight: activeTab === 'testimonials' ? 600 : 500
+                                    }}
                                 >
-                                    <Lucide.Layers size={18} /> Testimonials
+                                    <Lucide.Layers size={16} /> Testimonials
                                 </button>
                             </nav>
 
                             <div className="mt-5 pt-4 border-top border-secondary border-opacity-10 px-3">
-                                <button onClick={handleSave} className="btn btn-info w-100 py-3 fw-bold text-dark d-flex align-items-center justify-content-center gap-2" style={{ borderRadius: '12px' }}>
-                                    <Lucide.Save size={18} /> Save All Changes
+                                <button onClick={handleSave} className="btn w-100 py-3 fw-bold text-white d-flex align-items-center justify-content-center gap-2" style={{ borderRadius: '30px', backgroundColor: 'var(--primary-coral)' }}>
+                                    <Lucide.Save size={18} /> Save Changes
                                 </button>
                             </div>
                         </div>
@@ -357,12 +387,11 @@ function AdminSection() {
 
                     {/* Editor Content Area */}
                     <div className="col-lg-9">
-                        <div className="card p-5 border-0 text-start" style={{ background: 'rgba(20, 20, 30, 0.5)', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.03)', minHeight: '500px' }}>
+                        <div className="card p-5 border-0 text-start shadow-sm" style={{ borderRadius: '24px', minHeight: '500px' }}>
                             
                             {/* TAB: HERO SECTION */}
                             {activeTab === 'hero' && (
                                 <section>
-                                    <h3 className="h4 text-white fw-bold mb-4">Edit Hero & Header</h3>
                                     
                                     <div className="row g-3 mb-4">
                                         <div className="col-md-4">
