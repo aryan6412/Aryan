@@ -125,7 +125,7 @@ function First() {
                     />
                     <text fill="#0F4E46" fontSize="6" fontWeight="800" letterSpacing="1.2">
                       <textPath href="#circlePath">
-                        • {name.toUpperCase()} • FREELANCE DEVELOPER • CUSTOM SOFTWARE
+                        • {name.toUpperCase()} • FREELANCE DEVELOPER • SOFTWARE ENGINEER
                       </textPath>
                     </text>
                   </svg>
