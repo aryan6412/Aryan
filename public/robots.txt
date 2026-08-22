@@ -1,3 +1,7 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /#/admin
+Disallow: /admin
+
+# Sitemaps
+Sitemap: https://aryan-ashen-ten.vercel.app/sitemap.xml

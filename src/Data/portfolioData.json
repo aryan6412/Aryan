@@ -3,53 +3,71 @@
         "name": "Aryan Patel",
         "email": "ap8307655@gmail.com",
         "phone": "+91 7984419724",
-        "title": "Hey There, I'm Aryan",
-        "subtitle": "I design beautifully simple things, And I love what I do.",
-        "description": "Final Year Computer Engineering Student | Full-Stack Developer | AI/ML Enthusiast",
-        "experienceYears": 3,
-        "experienceUnit": "Months",
+        "title": "Hey There, I'm Aryan Patel",
+        "subtitle": "Freelance Web Developer & Custom Software Engineer in Visnagar (Mehsana, Gujarat)",
+        "description": "Building high-performance, modern business websites on a budget & custom software solutions (CRM, ERP, Billing, Booking systems) tailored for your business.",
+        "experienceYears": 1,
+        "experienceUnit": "Years",
         "imageUrl": "images/hero_portrait.png",
-        "projectsCompleted": "3",
-        "happyClients": "3"
+        "projectsCompleted": "5+",
+        "happyClients": "5+"
     },
     "services_data": [
         {
-            "title": "Website Design",
-            "projectsCount": 2,
+            "title": "Budget Business Websites",
+            "projectsCount": 4,
             "iconName": "Monitor",
             "color": "teal"
         },
         {
-            "title": "Manual Testing",
+            "title": "Custom Software & Web Apps",
+            "projectsCount": 3,
+            "iconName": "Code",
+            "color": "coral"
+        },
+        {
+            "title": "Booking & Billing Systems",
+            "projectsCount": 2,
+            "iconName": "Layers",
+            "color": "yellow"
+        },
+        {
+            "title": "Website Redesign & QA Testing",
             "projectsCount": 3,
             "iconName": "BadgeCheck",
-            "color": "teal"
+            "color": "mint"
         }
     ],
     "experience_data": [
         {
+            "company": "Freelance Developer & Consultant",
+            "dates": "2025 - Present",
+            "role": "Freelance Web & Software Developer",
+            "description": "Designing and developing budget-friendly business websites and custom software solutions for clients across Visnagar, Mehsana, and Gujarat."
+        },
+        {
             "company": "Velox Group Visnagar",
-            "dates": "March 2026- Present",
-            "role": "PHP Developer",
-            "description": "Building custom web applications for various clients using React and PHP"
+            "dates": "March 2026 - Present",
+            "role": "PHP & Web Developer",
+            "description": "Building custom web applications and business portals for diverse clients using React and PHP."
         }
     ],
     "works_data": [
         {
-            "title": "The Meera Hotel & Resort - Room booking Website",
-            "category": "Web Design",
+            "title": "The Meera Hotel & Resort - Room Booking Website",
+            "category": "Custom Business Website",
             "colorTheme": "yellow",
             "imageUrl": "images/project_brand_id.png"
         },
         {
-            "title": "Company Website",
-            "category": "Web Design",
+            "title": "Corporate & Agency Business Website",
+            "category": "Budget Business Website",
             "colorTheme": "teal",
             "imageUrl": "images/project_agency_web.png"
         },
         {
-            "title": "Shakti Bhuvan - Room booking Website",
-            "category": "Manual Testing",
+            "title": "Shakti Bhuvan - Room Booking & Management System",
+            "category": "Custom Software Solution",
             "colorTheme": "mint",
             "imageUrl": "images/project_food_app.png"
         }
@@ -59,7 +77,7 @@
         "github": "https://github.com/aryan6412",
         "linkedin": "https://www.linkedin.com/in/aryan-patel-516b492b5/",
         "resume": "https://drive.google.com/file/d/1ONRfstk5XCpE0ji_wB76TtQDHb7_nMIL/view",
-        "address": "34, Asaitnagar society, Mehsana road, Visnagar 384315",
-        "whatsapp": "https://wa.me/917984419724?text=Hi"
+        "address": "34, Asaitnagar society, Mehsana road, Visnagar, Gujarat 384315",
+        "whatsapp": "https://wa.me/917984419724?text=Hi%20Aryan,%20I%20need%20a%20website/custom%20software%20for%20my%20business"
     }
 }

@@ -111,7 +111,7 @@ function First() {
                 {/* Portrait picture */}
                 <img 
                   src={getHeroImageSrc()} 
-                  alt={name} 
+                  alt={`${name} - Freelance Web Developer in Visnagar, Gujarat`} 
                   className="portrait-img shadow-lg"
                 />
 
@@ -123,9 +123,9 @@ function First() {
                       d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" 
                       fill="none" 
                     />
-                    <text fill="#0F4E46" fontSize="6.2" fontWeight="800" letterSpacing="1.2">
+                    <text fill="#0F4E46" fontSize="6" fontWeight="800" letterSpacing="1.2">
                       <textPath href="#circlePath">
-                        • {name.toUpperCase()} • FULL-STACK DEVELOPER • COMPUTER ENGINEER
+                        • {name.toUpperCase()} • FREELANCE DEVELOPER • CUSTOM SOFTWARE
                       </textPath>
                     </text>
                   </svg>

@@ -1,6 +1,7 @@
 {
   "short_name": "Aryan Patel",
-  "name": "Aryan Patel Portfolio",
+  "name": "Aryan Patel | Freelance Web Developer & Custom Software Visnagar",
+  "description": "Freelance Web Developer in Visnagar, Mehsana, Gujarat. Budget business websites and custom software solutions.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0F4E46",
+  "background_color": "#020617"
 }

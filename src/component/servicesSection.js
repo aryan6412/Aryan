@@ -39,10 +39,10 @@ function ServicesSection() {
               What do I help?
             </h2>
             <p className="lead text-muted mb-4">
-              I help you find solutions and solve your technical problems. I use standard design processes to build digital products, optimizing them to help grow your business.
+              I help small businesses, startups, and companies build high-impact digital solutions. From budget-friendly business websites to custom management software (CRM, billing, and booking portals), I turn your ideas into functional products.
             </p>
             <p className="text-muted mb-5">
-              We focus on clean visual layout, responsive performance across all platforms, and strong UX guidelines that make your products feel intuitive and premium.
+              Based in Visnagar (Mehsana, Gujarat), I deliver affordable web development, responsive user experiences, and tailored custom software designed to help your business scale efficiently.
             </p>
 
             {/* Statistics Counters */}

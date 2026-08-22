@@ -44,7 +44,8 @@ function ProjectSection() {
                 <div className="work-img-container">
                   <img 
                     src={`${process.env.PUBLIC_URL}/${work.imageUrl}`} 
-                    alt={work.title} 
+                    alt={`${work.title} - ${work.category} by Aryan Patel`} 
+                    loading="lazy"
                     className="work-img"
                   />
                 </div>
