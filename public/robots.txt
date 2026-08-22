@@ -4,4 +4,4 @@ Disallow: /#/admin
 Disallow: /admin
 
 # Sitemaps
-Sitemap: https://aryan-ashen-ten.vercel.app/sitemap.xml
+Sitemap: https://aryan-patel-visnagar.vercel.app/sitemap.xml
