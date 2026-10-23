@@ -55,7 +55,7 @@
     ],
     "works_data": [
         {
-            "title": "BillBite v2 — Offline Restaurant POS",
+            "title": "Restaurant Billing Software",
             "category": "Custom Software Solution",
             "description": "Complete offline billing system: table + takeaway orders, KOT & kitchen display, GST billing, split payments, day-close reports. PHP + SQLite, zero cloud dependency.",
             "colorTheme": "teal",
