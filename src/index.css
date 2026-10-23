@@ -330,10 +330,10 @@ h1, h2, h3, h4, .font-display {
 
 .work-card {
   border-radius: 24px;
-  padding: 40px;
-  height: 420px;
+  padding: 36px 36px 28px 36px;
+  height: 440px;
   display: flex;
-  flex-column: column;
+  flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
   position: relative;
@@ -371,18 +371,19 @@ h1, h2, h3, h4, .font-display {
 }
 
 .work-title {
-  font-size: 2rem;
+  font-size: 1.85rem;
   font-family: var(--font-display);
   font-weight: 800;
-  margin-top: 8px;
+  margin-top: 6px;
+  line-height: 1.2;
 }
 
 .work-img-container {
   position: absolute;
-  bottom: -40px;
+  bottom: -35px;
   right: -20px;
   width: 75%;
-  height: 55%;
+  height: 52%;
   border-top-left-radius: 16px;
   overflow: hidden;
   box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.05);
@@ -396,7 +397,49 @@ h1, h2, h3, h4, .font-display {
 }
 
 .work-card:hover .work-img {
-  transform: scale(1.08);
+  transform: scale(1.06);
+}
+
+.work-img-container.has-secondary {
+  width: 82%;
+  height: 52%;
+  overflow: visible;
+}
+
+.work-img-container.has-secondary .work-img-secondary {
+  position: absolute;
+  top: -24px;
+  left: -20px;
+  width: 80%;
+  height: 85%;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  opacity: 0.85;
+  transition: var(--transition-smooth);
+}
+
+.work-img-container.has-secondary .work-img-primary {
+  position: relative;
+  z-index: 2;
+  width: 88%;
+  height: 88%;
+  margin-left: auto;
+  margin-top: 8px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-smooth);
+}
+
+.work-card:hover .work-img-container.has-secondary .work-img-secondary {
+  transform: translateY(-6px) translateX(-4px) rotate(-1deg);
+  opacity: 1;
+}
+
+.work-card:hover .work-img-container.has-secondary .work-img-primary {
+  transform: translateY(-4px) scale(1.02);
 }
 
 /* Testimonials Section */

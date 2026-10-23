@@ -35,18 +35,34 @@ function ProjectSection() {
               <div className={`work-card bg-${work.colorTheme} shadow-sm`}>
                 
                 {/* Text Content Area */}
-                <div className="text-start">
+                <div className="text-start" style={{ position: 'relative', zIndex: 3 }}>
                   <span className="work-category">{work.category}</span>
-                  <h3 className="work-title text-teal">{work.title}</h3>
+                  <h3 className="work-title text-teal mb-2">{work.title}</h3>
+                  {work.description && (
+                    <p 
+                      className={`work-desc mb-0 ${work.colorTheme === 'teal' ? 'text-white-50' : 'text-muted'}`}
+                      style={{ fontSize: '0.85rem', lineHeight: '1.45', maxWidth: '92%' }}
+                    >
+                      {work.description}
+                    </p>
+                  )}
                 </div>
 
                 {/* Mockup Image Area */}
-                <div className="work-img-container">
+                <div className={`work-img-container ${work.secondaryImageUrl ? 'has-secondary' : ''}`}>
+                  {work.secondaryImageUrl && (
+                    <img 
+                      src={`${process.env.PUBLIC_URL}/${work.secondaryImageUrl}`} 
+                      alt={`${work.title} - Order Cart Screen`} 
+                      loading="lazy"
+                      className="work-img work-img-secondary"
+                    />
+                  )}
                   <img 
                     src={`${process.env.PUBLIC_URL}/${work.imageUrl}`} 
                     alt={`${work.title} - ${work.category} by Aryan Patel`} 
                     loading="lazy"
-                    className="work-img"
+                    className="work-img work-img-primary"
                   />
                 </div>
 

@@ -3,7 +3,7 @@ import { Phone, Award, FileText } from 'lucide-react';
 import { hero_data, contactLinks } from '../Data/portfolioData';
 
 function First() {
-  const { name, email, phone, title, subtitle, experienceYears, experienceUnit, imageUrl } = hero_data;
+  const { name, email, phone, title, subtitle, aiSubtitle, experienceYears, experienceUnit, imageUrl } = hero_data;
   const { resume } = contactLinks || {};
 
   // Resolve image source dynamically supporting external URLs and relative path assets
@@ -40,6 +40,9 @@ function First() {
             <ul className="navbar-nav gap-2">
               <li className="nav-item">
                 <a className="nav-link nav-link-custom" href="#services">Services</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link nav-link-custom" href="#how-i-work">Process</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link nav-link-custom" href="#projects">Works</a>
@@ -84,8 +87,11 @@ function First() {
               <h1 className="hero-title-name text-teal font-display">
                 {title}
               </h1>
-              <p className="lead fs-4 text-muted mb-4 font-display" style={{ fontStyle: 'italic', fontWeight: 400 }}>
+              <p className="lead fs-4 text-muted mb-2 font-display" style={{ fontStyle: 'italic', fontWeight: 400 }}>
                 {subtitle}
+              </p>
+              <p className="lead fs-5 text-muted mb-4 font-display" style={{ fontStyle: 'italic', fontWeight: 400, opacity: 0.9 }}>
+                {aiSubtitle || "I build software AI-first — I design the system, AI coding agents build it, automated tests verify it."}
               </p>
               <div className="mb-4">
                 <a href={`mailto:${email}`} className="hero-email-link">

@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import First from './component/first';
 import ServicesSection from './component/servicesSection';
+import HowIWorkSection from './component/howIWorkSection';
 import ExperienceSection from './component/experienceSection';
 import ProjectSection from './component/projectSection';
 import TestimonialsSection from './component/testimonialsSection';
@@ -32,6 +33,7 @@ function App() {
     <div className="bady portfolio-app position-relative overflow-hidden">
       <First />
       <ServicesSection />
+      <HowIWorkSection />
       <ProjectSection />
       <ExperienceSection />
       <TestimonialsSection />

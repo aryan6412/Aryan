@@ -5,6 +5,7 @@
         "phone": "+91 7984419724",
         "title": "Hey There, I'm Aryan Patel",
         "subtitle": "Freelance Web Developer & Software Engineer",
+        "aiSubtitle": "I build software AI-first — I design the system, AI coding agents build it, automated tests verify it.",
         "description": "Building high-performance, modern business websites on a budget & custom software solutions (CRM, ERP, Billing, Booking systems) tailored for your business.",
         "experienceYears": 1,
         "experienceUnit": "Years",
@@ -53,6 +54,21 @@
         }
     ],
     "works_data": [
+        {
+            "title": "BillBite v2 — Offline Restaurant POS",
+            "category": "Custom Software Solution",
+            "description": "Complete offline billing system: table + takeaway orders, KOT & kitchen display, GST billing, split payments, day-close reports. PHP + SQLite, zero cloud dependency.",
+            "colorTheme": "teal",
+            "imageUrl": "images/billbite-tables.png",
+            "secondaryImageUrl": "images/billbite-order.png"
+        },
+        {
+            "title": "Contractor ERP — Multi-site Purchase & Stock",
+            "category": "Custom Software Solution",
+            "description": "Purchase, stock and contractor management across construction sites, with role-based access.",
+            "colorTheme": "mint",
+            "imageUrl": "images/contractor-erp.png"
+        },
         {
             "title": "The Meera Hotel & Resort - Room Booking Website",
             "category": "Custom Business Website",
